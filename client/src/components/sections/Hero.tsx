@@ -3,21 +3,27 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ASSETS } from '../../assets';
 import HeroWaterEffects from '../../effects/HeroWaterEffects';
+import { useIsMobile } from '../../hooks/useIsMobile';
 
 export default function Hero() {
   const bottleRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLElement>(null);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     gsap.from('.hero-reveal', {
-      y: 20, duration: 0.5, stagger: 0.08, ease: 'power2.out', delay: 0.15,
+      y: isMobile ? 14 : 20,
+      duration: isMobile ? 0.4 : 0.5,
+      stagger: 0.08,
+      ease: 'power2.out',
+      delay: 0.1,
     });
 
     const bottle = bottleRef.current;
-    if (bottle) {
+    if (bottle && !isMobile) {
       gsap.to(bottle, { y: -8, duration: 3, repeat: -1, yoyo: true, ease: 'sine.inOut' });
     }
-  }, []);
+  }, [isMobile]);
 
   return (
     <section ref={heroRef} className="hero section">
