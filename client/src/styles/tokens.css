@@ -1,0 +1,51 @@
+:root {
+  /* Plutonic-inspired premium palette — adapted for Elegancía water */
+  --primary:          #00AEEF;
+  --primary-dark:     #0090D0;
+  --primary-deeper:   #0077B6;
+  --primary-light:    #E8F6FC;
+  --primary-soft:     #F4FAFD;
+
+  /* Backgrounds */
+  --bg-primary:       #FFFFFF;
+  --bg-secondary:     #F4FAFD;
+  --bg-deep:          #E8F4FD;
+  --bg-glass:         rgba(255, 255, 255, 0.88);
+  --bg-overlay:       rgba(244, 250, 253, 0.92);
+
+  /* Water accent aliases (map to primary system) */
+  --water-lightest:   #EBF8FF;
+  --water-light:      #BAE6FD;
+  --water-mid:        #7DD3FC;
+  --water-core:       #00AEEF;
+  --water-deep:       #0090D0;
+  --water-deepest:    #0077B6;
+
+  /* Text */
+  --text-primary:     #0C4A6E;
+  --text-secondary:   #1A5F7A;
+  --text-body:        #5A6B7D;
+  --text-muted:       #94A3B8;
+
+  /* Borders */
+  --border-light:     rgba(0, 174, 239, 0.15);
+  --border-mid:       rgba(0, 174, 239, 0.3);
+  --border-strong:    rgba(0, 144, 208, 0.5);
+
+  /* Whites */
+  --white-pure:       #FFFFFF;
+  --white-soft:       #F8FCFF;
+  --white-glass:      rgba(255, 255, 255, 0.92);
+
+  /* UI */
+  --radius-card:      24px;
+  --radius-btn:       999px;
+  --radius-sm:        12px;
+  --shadow-card:      0 4px 24px rgba(0, 174, 239, 0.1);
+  --shadow-card-hover: 0 8px 32px rgba(0, 174, 239, 0.18);
+  --shadow-header:    0 2px 16px rgba(0, 60, 90, 0.06);
+
+  /* Fonts — clean sans like Plutonic */
+  --font-heading: 'Inter', 'Montserrat', system-ui, sans-serif;
+  --font-body: 'Inter', 'Montserrat', system-ui, sans-serif;
+}
